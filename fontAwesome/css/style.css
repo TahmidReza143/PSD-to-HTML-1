@@ -1,0 +1,286 @@
+/*
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Serif', serif;
+}
+.container {
+	width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.container:after,
+.container:before {
+	content: "";
+	display: table;
+	clear: both;
+}
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.col33 {
+	width: 33.33%;
+	padding: 0 15px;
+	float: left;
+}
+.col50 {
+	width: 50%;
+	padding: 0 15px;
+	float: left;
+}
+
+/*Common CSS*/
+.btn {
+	padding: 10px 20px;
+	display: inline-block;
+	background: #1a54e7;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+.btn-1 {
+	background: #d90445;
+}
+.btn-2 {
+	background: #000000;
+}
+.btn-3 {
+	background: #58b600;
+}
+.btn-4 {
+	background: #8200b2;
+}
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+/*Header*/
+.logo {
+	background: #1a54e7;
+	display: inline-block;
+	position: relative;
+	padding: 1px;
+}
+.logo:before {
+	content: "";
+	position: absolute;
+	background: #1a54e7;
+	top: 0;
+	bottom: 0;
+	right: 100%;
+	left: -5000px;
+}
+.menu {
+	float: right;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+}
+.menu ul li {
+	float: left;
+	list-style: none;
+}
+.menu ul li a {
+	padding: 15px;
+	display: block;
+	color: #1a54e7;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+.menu ul li.active a:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	background: #1a54e7;
+	left: 7px;
+	bottom: -1px;
+	right: 7px;
+}
+
+/*Banner*/
+.banner {
+	text-align: center;
+	background-image: url('../images/bg1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 150px;
+	position: relative;
+}
+.banner-in {
+	position: relative;
+}
+.girl img{
+	border-radius: 50%;
+}
+.b-title {
+	padding-bottom: 140px;
+}
+.b-title h2 {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 400;
+}
+.cat {
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+}
+.time-author {
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+
+}
+.time-author2 {
+	position: static;
+}
+.date {
+	color: #b0b0b0;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+}
+.date:after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 20px;
+	background: #b0b0b0;
+	right: -12px;
+	bottom: -1px;
+	font-size: 14px;
+}
+.author {
+	color: #1a54e7;
+	padding: 0 15px;
+	font-size: 14px;
+}
+
+.prev,
+.next {
+	position: absolute;
+	top: 50%;
+	background: #fff;
+	display: inline-block;
+	padding: 15px;
+	color: #272727;
+	left: 0;
+	cursor: pointer;
+}
+.next {
+	right: 0;
+	left: auto;
+}
+
+/*Blog*/
+.blog-bg {
+	background: #f6f6f6;
+}
+.blog-in {
+	position: relative;
+}
+.pos-img {
+	position: relative;
+}
+.item {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.text h3 {
+	font-size: 18px;
+}
+/*One Item*/
+.big-content {
+	position: absolute;
+	top: 50%;
+	color: #fff;
+	text-align: center;
+	right: 0;
+	left: 0;
+	transform: translateY(-50%);
+}
+.big-content h3 {
+	font-size: 48px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.big-content p {
+	margin-top: 0;
+}
+
+/*News*/
+.news {
+	text-align: center;
+	background-image: url('../images/bg3.jpg');
+	background-size: cover;
+	padding-bottom: 140px;
+	padding-top: 100px;
+}
+.news h3 {
+	font-size: 48px;
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.news p {
+	color: #8baeff;
+	font-size: 24px;
+	margin-top: 0;
+}
+.subscribe {
+	position: relative;
+	display: inline-block;
+}
+.input input {
+	display: inline-block;
+	height: 50px;
+	width: 330px;
+	border-radius: 30px;
+	background: #2c6cff;
+	outline: 0;
+	border: 0;
+	color: #fff;
+	padding-left: 24px;
+	padding-right: 125px;
+}
+.button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.button input {
+	height: 100%;
+	display: inline-block;
+	padding: 18px 32px;
+	color: #1a54e7;
+	background: #fff;
+	font-weight: 700;
+	border: 0;
+	border-radius: 30px
+}
+
+/*Footer*/
+.footer {
+	text-align: center;
+	font-size: 18px;
+	color: #a7acbc;
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+.footer a {
+	color: #a7acbc;
+	text-decoration: none;
+}
